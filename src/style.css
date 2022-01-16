@@ -136,11 +136,18 @@ body {
 .controls i {
     font-size: 28px;
     user-select: none;
-    background: whitesmoke;
-    opacity: 0.6;
+    background: white;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.controls i:hover {
+    -webkit-text-fill-color: #ff0000;
+    border-radius: 20%;
+    background: white;
 }
 
 .controls i:nth-child(2),
@@ -186,6 +193,10 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     position: absolute;
+}
+
+.play-pause i:hover {
+    transition: none;
 }
   
 .music-list {
