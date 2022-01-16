@@ -14,9 +14,16 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: url('https://images.unsplash.com/photo-1477346611705-65d1883cee1e?dpr=0.800000011920929&auto=format&fit=crop&w=1199&h=800&q=80&cs=tinysrgb&crop=') fixed no-repeat;
-    background-size: cover;
-    backdrop-filter: blur(2px);
+}
+
+#particles-js { 
+    position:absolute; 
+    width: 100%; 
+    height: 100%; 
+    background-color: #111218; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: 50% 50%; 
 }
 
 .wrapper {
@@ -202,6 +209,7 @@ body {
 .music-list {
     position: absolute;
     background: inherit;
+    backdrop-filter: blur(20px);
     width: 100%;
     left: 0;
     bottom: -55%;
@@ -237,7 +245,8 @@ body {
 
 .header #close {
     font-size: 22px;
-    color: whitesmoke;
+    color: white;
+    cursor: pointer;
 }
   
 .music-list ul {
@@ -279,4 +288,5 @@ ul li .audio-duration {
 ul li.playing {
     pointer-events: none;
     color: #790909;
+    font-weight: bolder;
 }
